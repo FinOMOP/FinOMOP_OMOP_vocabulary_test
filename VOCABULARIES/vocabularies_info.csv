@@ -1,0 +1,4 @@
+source_vocabulary_id,twobillionare_code,path_to_usagi_file,path_to_vocabulary_info_file,mapping_version,last_modify_date,mapping_type,ignore
+ICD10fi,20005,./ICD10fi/ICD10fi.usagi.csv,./ICD10fi/ICD10fi.info.csv,v1.0.0,2022-04-22,CCR,FALSE
+NCSPfi,20013,./NCSPfi/NCSPfi.usagi.csv,./NCSPfi/NCSPfi.info.csv,v1.0.0,2022-04-22,CCR,FALSE
+FGVisitType,20023,./FGVisitType/FGVisitType.usagi.csv,./FGVisitType/FGVisitType.info.csv,v1.0.0,2023-01-18,CCR,FALSE

@@ -1,0 +1,1 @@
+this default folder to store temporarly the omop vocabulary files built from the usagi files

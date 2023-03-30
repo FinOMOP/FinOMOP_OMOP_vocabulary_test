@@ -1,0 +1,6 @@
+concept_id,type,text_id,text_name
+2000500001,Vocabulary,ICD10fi,ICD10 Finnish Extension
+2000500002,Concept Class,ICD10fi Hierarchy,ICD10 Finnish Extension Hierarchy code
+2000500003,Concept Class,ICD10fi 1 Code,ICD10 Finnish Extension 1 Code
+2000500004,Concept Class,ICD10fi 2 Code,ICD10 Finnish Extension Combination Code
+2000500005,Concept Class,ICD10fi 2 Code [A],ICD10 Finnish Extension Combination Code [auto generated]
