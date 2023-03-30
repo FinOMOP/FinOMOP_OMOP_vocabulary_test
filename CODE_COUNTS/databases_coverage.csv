@@ -1,0 +1,3 @@
+database_name,path_to_code_counts_file,ignore
+FinnGenDummy,./databases/FinnGenDummy.csv,FALSE
+HUSDummy,./databases/HUSDummy.csv,FALSE

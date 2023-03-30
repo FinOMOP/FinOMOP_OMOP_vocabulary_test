@@ -1,0 +1,5 @@
+source_vocabulary_id,target_vocabulary_ids,mantained_by,ignore
+ATC,ATC,OMOP,FALSE
+ICD10fi,ICD10,OMOP,FALSE
+ICD10fi,ICD10fi,FinnOMOP,FALSE
+FGVisitType,FGVisitType,FinnGen,FALSE

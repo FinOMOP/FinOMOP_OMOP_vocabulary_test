@@ -1,0 +1,6 @@
+concept_id,type,text_id,text_name
+2002300001,Vocabulary,FGVisitType,FGVisitType code
+2002300002,Concept Class,SRC|ServiceSector,SOURCE | ServiceSector
+2002300003,Concept Class,SRC|Contact|Urgency,SOURCE | Contact Type | Urgency
+2002300004,Concept Class,SRC|Contact|Service,SOURCE | Contact Type | Service Type
+2002300005,Concept Class,SRC,SOURCE

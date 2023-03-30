@@ -5,5 +5,6 @@ OMOP_VOCABULARIES/output_omop_vocabulary/*
 OMOP_VOCABULARIES/temp_omop_vocabulary/*
 !OMOP_VOCABULARIES/temp_omop_vocabulary/README.md
 OMOP_VOCABULARIES/USAGI_with_FinnOMOP/*
-#OMOP_VOCABULARIES/USAGI_with_FinnOMOP.zip
+
+*.zip
 .vscode/*

@@ -1,0 +1,106 @@
+VOCABULARY ID,VOCABULARY NAME,DEFAULT,FINNGEN,HUS,TYKS,PSHP,KYS,FinnOMOP
+SNOMED,Systematic Nomenclature of Medicine - Clinical Terms (IHTSDO),x,x,x,,,,x
+ICD9CM,"International Classification of Diseases, Ninth Revision, Clinical Modification, Volume 1 and 2 (NCHS)",x,x,,,,,x
+ICD9Proc,"International Classification of Diseases, Ninth Revision, Clinical Modification, Volume 3 (NCHS)",x,x,x,,,,x
+CPT4,Current Procedural Terminology version 4 (AMA),x,x,x,,,,x
+HCPCS,Healthcare Common Procedure Coding System (CMS),x,x,,,,,x
+LOINC,Logical Observation Identifiers Names and Codes (Regenstrief Institute),x,x,x,,,,x
+NDFRT,National Drug File - Reference Terminology (VA),,,,,,,
+RxNorm,RxNorm (NLM),x,x,x,,,,x
+NDC,National Drug Code (FDA and manufacturers),x,x,,,,,x
+GPI,Medi-Span Generic Product Identifier (Wolters Kluwer Health),,,,,,,
+Gender,OMOP Gender,x,x,,,,,x
+Race,Race and Ethnicity Code Set (USBC),x,x,,,,,x
+CMS Place of Service,Place of Service Codes for Professional Claims (CMS),x,x,,,,,x
+MedDRA,Medical Dictionary for Regulatory Activities (MSSO),,,,,,,
+Multum,Cerner Multum (Cerner),,,,,,,
+Read,NHS UK Read Codes Version 2 (HSCIC),,,,,,,
+OXMIS,Oxford Medical Information System (OCHP),,,,,,,
+Indication,Indications and Contraindications (FDB),,,,,,,
+ETC,Enhanced Therapeutic Classification (FDB),,,,,,,
+ATC,WHO Anatomic Therapeutic Chemical Classification,x,x,x,,,,x
+Multilex,Multilex (FDB),,,,,,,
+VANDF,Veterans Health Administration National Drug File,,,,,,,
+SMQ,Standardised MedDRA Queries (MSSO),,,,,,,
+VA Class,VA National Drug File Class (VA),,,,,,,
+Cohort,Legacy OMOP HOI or DOI cohort,,,,,,,
+ICD10,"International Classification of Diseases, Tenth Revision (WHO)",,X,,,,,x
+ICD10PCS,ICD-10 Procedure Coding System (CMS),,,x,,,,x
+DRG,Diagnosis-related group (CMS),,,,,,,
+MDC,Major Diagnostic Categories (CMS),,,,,,,
+APC,Ambulatory Payment Classification (CMS),,,,,,,
+Revenue Code,UB04/CMS1450 Revenue Codes (CMS),x,x,,,,,x
+Ethnicity,OMOP Ethnicity,x,x,,,,,x
+MeSH,Medical Subject Headings (NLM),,,,,,,
+NUCC,National Uniform Claim Committee Health Care Provider Taxonomy Code Set (NUCC),x,x,,,,,x
+Medicare Specialty,Medicare provider/supplier specialty codes (CMS),x,x,,,,,x
+SPL,Structured Product Labeling (FDA),x,x,,,,,x
+GCN_SEQNO,Clinical Formulation ID (FDB),,,,,,,
+CCS,Clinical Classifications Software for ICD-9-CM (HCUP),,,,,,,
+OPCS4,OPCS Classification of Interventions and Procedures version 4 (NHS),,,x,,,,x
+Gemscript,Gemscript (Resip),,,,,,,
+HES Specialty,Hospital Episode Statistics Specialty (NHS),,,,x,,,x
+PCORNet,National Patient-Centered Clinical Research Network (PCORI),,,,,,,
+Currency,International Currency Symbol (ISO 4217),x,x,,,,,x
+ICD10CM,"International Classification of Diseases, Tenth Revision, Clinical Modification (NCHS)",x,,,,,,
+ABMS,Provider Specialty (American Board of Medical Specialties),x,x,,,,,x
+CIEL,Columbia International eHealth Laboratory (Columbia University),,,,,,,
+DA_France,Disease Analyzer France (IQVIA),,,,,,,
+DPD,Drug Product Database (Health Canada),,,,,,,
+dm+d,Dictionary of Medicines and Devices (NHS),,,,,,,
+BDPM,Public Database of Medications (Social-Sante),,,,,,,
+AMIS,Medicinal Products Information System (DIMDI),,,,,,,
+AMT,Australian Medicines Terminology (NEHTA),,,,,,,
+EU Product,Community Register of Medicinal Products for Human Use (European Commission),,,,,,,
+EphMRA ATC,Anatomical Classification of Pharmaceutical Products (EphMRA),,,,,,,
+NFC,New Form Code (EphMRA),,,,,,,
+RxNorm Extension,RxNorm Extension (OHDSI),x,x,x,,,,x
+LPD_Australia,Longitudinal Patient Data Australia (IQVIA),,,,,,,
+GRR,Global Reference Repository (IQVIA),,,,,,,
+MMI,Modernizing Medicine (MMI),,,,,,,
+Specimen Type,OMOP Specimen Type,,,,,,,
+CVX,CDC Vaccine Administered CVX (NCIRD),,,,,,,
+PPI,AllOfUs_PPI (Columbia),,,,,,,
+ICDO3,"International Classification of Diseases for Oncology, Third Edition (WHO)",,x,x,,,,x
+CDT,Current Dental Terminology (ADA),,,,,,,
+ISBT,Information Standard for Blood and Transplant 128 Product (ICCBBA),,,,,,,
+ISBT Attribute,Information Standard for Blood and Transplant 128 Product Attribute (ICCBBA),,,,,,,
+GGR,Commented Drug Directory (BCFI),,,,,,,
+LPD_Belgium,Longitudinal Patient Data Belgium (IQVIA),,,,,,,
+KDC,Korean Drug Code (HIRA),,,,,,,
+SUS,"Table of Procedures, Drugs, Orthoses, Protheses and Special Materials (Brazilian Unified Health System)",,,,,,,
+MEDRT,Medication Reference Terminology MED-RT (VA),,,,,,,
+Episode Type,OMOP Episode Type,,,,,,,
+SNOMED Veterinary,SNOMED Veterinary,,,,,,,
+JMDC,Japan Medical Data Center Drug Code (JMDC),,,,,,,
+Provider,OMOP Provider,,,,,,,
+Supplier,OMOP Supplier,,,,,,,
+HemOnc,HemOnc,,,,,,,
+NAACCR,Data Standards & Data Dictionary Volume II (NAACCR),,,x,,,,x
+KCD7,"Korean Classification of Diseases, 7th Revision",,,,,,,
+KNHIS,Korean National Health Information System,,,,,,,
+CTD,Comparative Toxicogenomic Database,,,,,,,
+EDI,Korean EDI,,,,,,,
+ICD10CN,"International Classification of Diseases, Tenth Revision, Chinese Edition",,,,,,,
+ICD9ProcCN,"International Classification of Diseases, Ninth Revision, Chinese Edition, Procedures",,,,,,,
+Nebraska Lexicon,Nebraska Lexicon,,x,x,,,,x
+OMOP Extension,OMOP Extension (OHDSI),x,x,,,,,x
+CAP,CAP electronic Cancer Checklists (College of American Pathologists),,,,,,,
+CIM10,"International Classification of Diseases, Tenth Revision, French Edition",,,,,,,
+NCCD,Normalized Chinese Clinical Drug,,,,,,,
+CIViC,Clinical Interpretation of Variants in Cancer (civicdb.org),,,,,,,
+CGI,Cancer Genome Interpreter (Pompeu Fabra University),,,,,,,
+ClinVar,ClinVar (NCBI),,,,,,,
+JAX,The Clinical Knowledgebase (The Jackson Laboratory),,,,,,,
+NCIt,NCI Thesaurus (National Cancer Institute),,,,,,,
+HGNC,Human Gene Nomenclature (European Bioinformatics Institute),,,,,,,
+ICD10GM,"International Classification of Diseases, Tenth Revision, German Edition",,,,,,,
+Cancer Modifier,Diagnostic Modifiers of Cancer (OMOP),,,,,,,
+OPS,Operations and Procedures Classification (OPS),,,,,,,
+CCAM,Common Classification of Medical Acts,,,,,,,
+UK Biobank,UK Biobank,,,,,,,
+OncoKB,Oncology Knowledge Base (MSK),,,,,,,
+OMOP Genomic,OMOP Genomic vocabulary,,,,,,,
+OncoTree,OncoTree (MSK),,,,,,,
+OMOP Invest Drug,OMOP Investigational Drugs,,,,,,,
+UCUM,Unified Code for Units of Measure (Regenstrief Institute),,,x,,,,x
