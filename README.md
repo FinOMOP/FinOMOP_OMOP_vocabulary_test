@@ -1,3 +1,6 @@
+
+! This is a demo copy from the private repository github.com/FinOMOP/FinOMOP_OMOP_vocabulary!
+
 # FinOMOP OMOP vocabularies 
 
 This repository helps to maintain the mapping of Finnish medical codes to OMOP standard concepts. 

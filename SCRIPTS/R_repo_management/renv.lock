@@ -9,6 +9,60 @@
     ]
   },
   "Packages": {
+    "DBI": {
+      "Package": "DBI",
+      "Version": "1.1.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "b2866e62bab9378c3cc9476a1954226b",
+      "Requirements": []
+    },
+    "DataQualityDashboard": {
+      "Package": "DataQualityDashboard",
+      "Version": "2.1.2",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "OHDSI",
+      "RemoteRepo": "DataQualityDashboard",
+      "RemoteRef": "main",
+      "RemoteSha": "1197d5d8287c35a5c3f71d010220959494a160d3",
+      "Remotes": "ohdsi/Eunomia",
+      "Hash": "3a65c4711c8541547fc636aee49a64a6",
+      "Requirements": [
+        "DatabaseConnector",
+        "ParallelLogger",
+        "SqlRender",
+        "dplyr",
+        "jsonlite",
+        "magrittr",
+        "plyr",
+        "rJava",
+        "rlang",
+        "stringr",
+        "tidyselect"
+      ]
+    },
+    "DatabaseConnector": {
+      "Package": "DatabaseConnector",
+      "Version": "6.2.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "20e029282c9ac90e4d71018feb507aff",
+      "Requirements": [
+        "DBI",
+        "SqlRender",
+        "bit64",
+        "checkmate",
+        "dbplyr",
+        "digest",
+        "rJava",
+        "readr",
+        "rlang",
+        "stringr",
+        "urltools"
+      ]
+    },
     "MASS": {
       "Package": "MASS",
       "Version": "7.3-58.1",
@@ -25,6 +79,18 @@
       "Hash": "539dc0c0c05636812f1080f473d2c177",
       "Requirements": [
         "lattice"
+      ]
+    },
+    "ParallelLogger": {
+      "Package": "ParallelLogger",
+      "Version": "3.1.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "8d893bed8c8bfe21217464dd3f9ec3e9",
+      "Requirements": [
+        "jsonlite",
+        "snow",
+        "xml2"
       ]
     },
     "R6": {
@@ -48,15 +114,19 @@
       "Version": "0.0.0.9000",
       "Source": "GitHub",
       "RemoteType": "github",
-      "RemoteUsername": "javier-gracia-tabuenca-tuni",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "FinOMOP",
       "RemoteRepo": "ROMOPMappingTools",
       "RemoteRef": "main",
-      "RemoteSha": "93d45e85677f05af665029b7866508a1d1cbecf6",
-      "RemoteHost": "api.github.com",
-      "Hash": "66c8764f51bbc8be5bb037108a65ac71",
+      "RemoteSha": "d0d7b431ae715bd2d30e6c272258146075051fa1",
+      "Hash": "966266d09fb8f422830be92148e66ea5",
       "Requirements": [
+        "DataQualityDashboard",
+        "DatabaseConnector",
+        "SqlRender",
         "checkmate",
         "dplyr",
+        "duckdb",
         "flexdashboard",
         "ggplot2",
         "lubridate",
@@ -77,6 +147,18 @@
       "Repository": "CRAN",
       "Hash": "e749cae40fa9ef469b6050959517453c",
       "Requirements": []
+    },
+    "SqlRender": {
+      "Package": "SqlRender",
+      "Version": "1.14.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "9bc9e33cbab6a5f99bcee12c4ce4b7c9",
+      "Requirements": [
+        "checkmate",
+        "rJava",
+        "rlang"
+      ]
     },
     "backports": {
       "Package": "backports",
@@ -110,6 +192,17 @@
       "Hash": "9fe98599ca456d6552421db0d6772d8f",
       "Requirements": [
         "bit"
+      ]
+    },
+    "blob": {
+      "Package": "blob",
+      "Version": "1.2.4",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "40415719b5a479b87949f3aa0aee737c",
+      "Requirements": [
+        "rlang",
+        "vctrs"
       ]
     },
     "bslib": {
@@ -210,6 +303,31 @@
       "Hash": "e8a1e41acf02548751f45c718d55aa6a",
       "Requirements": []
     },
+    "dbplyr": {
+      "Package": "dbplyr",
+      "Version": "2.3.2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "d24305b92db333726aed162a2c23a147",
+      "Requirements": [
+        "DBI",
+        "R6",
+        "blob",
+        "cli",
+        "dplyr",
+        "glue",
+        "lifecycle",
+        "magrittr",
+        "pillar",
+        "purrr",
+        "rlang",
+        "tibble",
+        "tidyr",
+        "tidyselect",
+        "vctrs",
+        "withr"
+      ]
+    },
     "digest": {
       "Package": "digest",
       "Version": "0.6.31",
@@ -236,6 +354,16 @@
         "tibble",
         "tidyselect",
         "vctrs"
+      ]
+    },
+    "duckdb": {
+      "Package": "duckdb",
+      "Version": "0.7.1-1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "87a32b8f6439136df276da385ebd4ab0",
+      "Requirements": [
+        "DBI"
       ]
     },
     "ellipsis": {
@@ -608,6 +736,16 @@
       "Hash": "01f28d4278f15c76cddbea05899c5d6f",
       "Requirements": []
     },
+    "plyr": {
+      "Package": "plyr",
+      "Version": "1.8.8",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "d744387aef9047b0b48be2933d78e862",
+      "Requirements": [
+        "Rcpp"
+      ]
+    },
     "prettyunits": {
       "Package": "prettyunits",
       "Version": "1.1.1",
@@ -675,6 +813,14 @@
         "rlang",
         "vctrs"
       ]
+    },
+    "rJava": {
+      "Package": "rJava",
+      "Version": "1.0-6",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "0415819f6baa75d86d52483f7292b623",
+      "Requirements": []
     },
     "rappdirs": {
       "Package": "rappdirs",
@@ -859,6 +1005,14 @@
         "xtable"
       ]
     },
+    "snow": {
+      "Package": "snow",
+      "Version": "0.4-4",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "40b74690debd20c57d93d8c246b305d4",
+      "Requirements": []
+    },
     "sourcetools": {
       "Package": "sourcetools",
       "Version": "0.1.7-1",
@@ -976,6 +1130,16 @@
         "shiny"
       ]
     },
+    "triebeard": {
+      "Package": "triebeard",
+      "Version": "0.4.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "642507a148b0dd9b5620177e0a044413",
+      "Requirements": [
+        "Rcpp"
+      ]
+    },
     "tzdb": {
       "Package": "tzdb",
       "Version": "0.3.0",
@@ -984,6 +1148,17 @@
       "Hash": "b2e1cbce7c903eaf23ec05c58e59fb5e",
       "Requirements": [
         "cpp11"
+      ]
+    },
+    "urltools": {
+      "Package": "urltools",
+      "Version": "1.7.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "e86a704261a105f4703f653e05defa3e",
+      "Requirements": [
+        "Rcpp",
+        "triebeard"
       ]
     },
     "utf8": {
@@ -1075,6 +1250,14 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "a6860e1400a8fd1ddb6d9b4230cc34ab",
+      "Requirements": []
+    },
+    "xml2": {
+      "Package": "xml2",
+      "Version": "1.3.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "40682ed6a969ea5abfd351eb67833adc",
       "Requirements": []
     },
     "xtable": {
