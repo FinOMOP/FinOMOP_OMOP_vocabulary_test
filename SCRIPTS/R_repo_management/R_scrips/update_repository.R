@@ -86,42 +86,21 @@ ROMOPMappingTools::mergeOMOPtables(
 
 # Validate the newly created vocabularies --------------------------------
 #
-# Checks for errors in the tables in path_to_output_omop_vocabulary_folder.
+# Usese DataQualityDashboard to errors in the tables in path_to_output_omop_vocabulary_folder.
 # For example, all concept_ids are unique, codes per vocabulary are unic, vocabulary_ids are correct, etc
 #
 
-omop_tables <- ROMOPMappingTools::importOMOPtables(
-  path_to_output_omop_vocabulary_folder,
-  c("CONCEPT","VOCABULARY", "CONCEPT_CLASS", "CONCEPT_RELATIONSHIP", "CONCEPT_SYNONYM", "DOMAIN")
-  )
-
-omop_tables <-  ROMOPMappingTools::validateTables(omop_tables)
-omop_tables <- ROMOPMappingTools::validateOMOPTablesRelationships(omop_tables)
-
-if(sum(omop_tables$n_failed_rules)!=0){
-  omop_tables
-#  stop("errors in omop_tables")
-}
+connection_details_omop_tables <- ROMOPMappingTools::createTemporalDatabaseWithOMOPtable(path_to_output_omop_vocabulary_folder)
+results_DQD <- ROMOPMappingTools::validateOMOPtablesWithDQD(connection_details_omop_tables)
 
 
-
-
-# Calculate databased coverage ------------------------------------------------------
+# Calculate databases coverage ------------------------------------------------------
 #
 # - Reads databases code-counts files
 # - Fix some common errors done in the  code-counts files. e.g. merge duplicate code counts, remove counts with less than 5.
 #
 
 databases_code_counts_tables <- ROMOPMappingTools::importDatabasesCodeCountsTables(path_to_input_database_counts_file)
-
-# auto fix common errors
-databases_code_counts_tables <- ROMOPMappingTools::validateTables(databases_code_counts_tables, table_type = "CodeCounts")
-
-databases_code_counts_tables <- databases_code_counts_tables |>
-  dplyr::mutate(table = dplyr::if_else(n_failed_rules==0, table,
-                         purrr::map2(.x=table, .y=name, .f=~ROMOPMappingTools::autoFixDatabaseCodeCountTable(.x,.y))
-  ))
-
 databases_code_counts_tables <- ROMOPMappingTools::validateTables(databases_code_counts_tables, table_type = "CodeCounts")
 
 # stop if errors
@@ -141,7 +120,7 @@ if(sum(databases_code_counts_tables$n_failed_rules)!=0){
 
 mapping_status <- ROMOPMappingTools::calculateMappingStatus(
   path_to_input_vocabularies_coverage_file,
-  omop_tables,
+  connection_details_omop_tables,
   databases_code_counts_tables)
 
 # uncomment if want to see results before build dasboard
@@ -153,7 +132,7 @@ tmp_html <- path_to_output_dashboard_file
 ROMOPMappingTools::buildStatusDashboard(
   usagi_mapping_tables = usagi_mapping_tables,
   vocabulary_info_mapping_tables = vocabulary_info_mapping_tables,
-  omop_tables  = omop_tables,
+  results_DQD  = results_DQD,
   databases_code_counts_tables = databases_code_counts_tables,
   mapping_status  = mapping_status,
   output_file_html = tmp_html)
