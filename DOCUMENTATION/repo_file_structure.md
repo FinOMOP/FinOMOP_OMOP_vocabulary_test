@@ -23,9 +23,9 @@ This file must follow the in `vocabularies-info` format.
 ## OMOP_VOCABULARIES
 
 - FinOMOP_selecting_Athena_vocabularies.csv: File with the list of official vocabularies from Athena used by the FinOMOP members. 
-- input_omop_vocbulary.zip: Zip file with the OMOP vocabulary files with the vocabularies downloaded from Athena (cpt4 scrips already ran). 
-- USAGUI_with_FinnOMOP.zip: Zip with USAGUI v1.4.0 with the indexes already built using files in "input_omop_vocbulary.zip". 
-- output_omop_vocabulary.zip: Zip file with the vocabulary OMOP vocabulary files with the vocabularies downloaded and all the FinnOMOP vocabularies. 
+- input_omop_vocabulary/: This folder is used to store the omop vocabulary tables downloaded from Athena. In the remote repository, it only contains a readme.md file to keep the folder tracked. 
+- temp_omop_vocabulary/: This folder is used to store the omop vocabulary tables generated from the `usagi` files . In the remote repository, it only contains a readme.md file to keep the folder tracked. 
+- output_omop_vocabulary/: This folder is used to store the merged omop vocabulary tables from input_omop_vocabulary and temp_omop_vocabulary. In the remote repository, it only contains a readme.md file to keep the folder tracked. 
 
 ## CODE_COUNTS
 
