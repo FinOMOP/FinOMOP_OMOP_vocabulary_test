@@ -11,21 +11,52 @@ There is one main branch, one development branch, and multiple feature branches.
 - feature branches: Every time an update is made, a feature branch is created from development-branch.
  
 
+```mermaid
+---
+title: Example workflow
+---
+
+gitGraph
+   commit id: "init"
+   commit id: "release v0.0.0" tag: "v0.0.0"
+   branch development
+   checkout development
+   commit id: " "
+   commit id: "  "
+   branch feature_add_ICD10fi_vocabulary
+   checkout feature_add_ICD10fi_vocabulary
+   commit id: "Created ICD10fi.Usagi.csv"
+   commit id: "Created NEWS.md"
+   checkout development
+   merge feature_add_ICD10fi_vocabulary
+   commit id: "   "
+   checkout main
+   merge development
+   commit id: "Release v1.0.0" tag: "v1.0.0"
+   checkout development
+   branch feature_update_ICD10fi_mappings
+   checkout feature_update_ICD10fi_mappings
+   commit id: "Updated ICD10fi.Usagi.csv"
+   commit id: "Updated NEWS.md"
+   checkout development
+   merge feature_update_ICD10fi_mappings
+   commit id: "    "
+```
+
 #### Adding features
 
-The first step to add a feature (where feature means any addition or change to the repository) is to create an issue in gitlab. Explain in the issue the feature you want to add and why. Set the correct label to the issue [see list of labels](https://gitlab.tietoriihi.fi/omop/finomop_omop_vocabulary/-/labels). 
+The first step to add a feature (where feature means any addition or change to the repository) is to create an issue in GitHub. 
+Explain in the issue the feature you want to add and why. Set the correct label to the issue (e.g. `adding_new_vocabulary`, `updating_vocabulary`, etc). 
 
 Secondly, create a new branch starting with the issue id with source branch `development`. 
-This can be done directly in Gitlab. Gitlab will automatically set the brunch name as the issue id and issue title.     
+This can be done directly in Github from the right side menu.   
 
-![](./source/img/00001.png)
-
-Now you can pull this branch to your local machine and work on the changes. Try to create commit grouping the changes on the different steps you make.   
+Now you can pull this branch to your local machine and work on the changes. Try to create commits along the way grouping the changes on the different steps you make.   
 
 When changes in the feature branch are ready, you should create a pull request to the development branch. The repo maintainer will evaluate that the changes are correct and if so they will be merged to the development branch. Some rules for a pull request to be accepted are: 
 
 - The feature branch bring changes only to the files with in the context of the branch. For example, a feature branch named `3-updating-vocab-ICD10fi` must only contain changes in the files related to the ICD10fi vocabulary.  
-- If changes in the vocabulary files have been made, the branch must have successfully pass the evaluation tests, and produce a new status dashboard. 
+- If changes in the vocabulary files have been made, the branch must have successfully pass the automatic evaluation tests, and produce a new status dashboard reflecting the changes. 
 
 
 #### Releases

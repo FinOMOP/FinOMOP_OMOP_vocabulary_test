@@ -14,7 +14,7 @@ These files can be created in 2 ways:
 
 Create a new issue with name  `adding local vocab <vocabulary_id>` and label `adding local vocabulary`. 
 Create a new branch branching from `development` branch with name `<issue_id>-adding-local-vocab-<vocabulary_id>`, e.g.    `3-adding-local-vocab-ICD10fi`.
-Gitlab can do this automatically for you.
+Github can do this automatically for you.
 
 ## 2. Create folder and add files
 
