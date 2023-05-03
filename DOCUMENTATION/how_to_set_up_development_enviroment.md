@@ -2,7 +2,7 @@
 
 ## Set up R environment 
 
-You need to have R installed. 
+You need to have R installed with the same requirements that for Hades. See [Hades setup](https://ohdsi.github.io/Hades/rSetup.html)
 
 We use [renv](https://rstudio.github.io/renv/index.html) package to keep a reproducible environment between users. 
 
@@ -11,7 +11,7 @@ Opening the R project [SCRIPTS/R_repo_management/R_repo_management.Rproj](../SCR
 
 ## Copy the Athena vocabulary files 
 
-Navigate to the latest release in GitHub and download output_omop_vocabulary.zip. 
+Navigate to the latest release in GitHub and download input_omop_vocabulary.zip. 
 Unzip the contents in the folder OMOP_VOCABULARIES/input_omop_vocabulary/. 
 
 
