@@ -9,3 +9,4 @@ OMOP_VOCABULARIES/USAGI_with_FinnOMOP/*
 *.zip
 .vscode/*
 .DS_Store
+.Rproj.user
