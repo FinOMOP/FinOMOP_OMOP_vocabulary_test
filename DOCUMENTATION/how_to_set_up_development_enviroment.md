@@ -2,7 +2,7 @@
 
 ## Set up R environment 
 
-You need to have R installed with the same requirements that for Hades. See [Hades setup](https://ohdsi.github.io/Hades/rSetup.html)
+You need to have R installed. 
 
 We use [renv](https://rstudio.github.io/renv/index.html) package to keep a reproducible environment between users. 
 
